@@ -1,0 +1,99 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+
+nav {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.page {
+  background: var(--geist-background);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.2);
+}
+
+input[type='submit'] {
+  background: #ececec;
+  border: 0;
+  padding: 1rem 2rem;
+}
+
+.back {
+  margin-left: 1rem;
+}
+
+.post {
+  background: white;
+  transition: box-shadow 0.1s ease-in;
+}
+
+.post {
+  background: var(--geist-background);
+  transition: box-shadow 0.1s ease-in;
+}
+
+.post:hover {
+  box-shadow: 1px 1px 3px #aaa;
+}
+
+.post + .post {
+  margin-top: 2rem;
+}
+
+
+.page {
+  background: var(--geist-background);
+  padding: 2rem;
+}
+
+.actions {
+  margin-top: 2rem;
+}
+
+button {
+  background: #ececec;
+  border: 0;
+  border-radius: 0.125rem;
+  padding: 1rem 2rem;
+}
+
+button + button {
+  margin-left: 1rem;
+}
