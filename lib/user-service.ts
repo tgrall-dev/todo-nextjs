@@ -52,6 +52,10 @@ export class UserService {
     }
     return null;
   }
+  
+  escapeQuotes(s: string): string {
+    return s.replace("'", "''");
+  }
 
 }
 
